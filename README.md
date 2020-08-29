@@ -33,7 +33,7 @@ We can know everything about the scene, making it possible to
 - Generate the image's corresponding segmentation-map
 - Generate the image's corresponding depth-map
 
-## Script the Randomise/Render workflow & run blender headless on a server with GPU
+## Script the Randomise/Render workflow
 
 The following example scripts will generate 10 sets of
 - Segmentation Map
@@ -51,7 +51,7 @@ import random
 for n in range(10):
     print(n) 
 
-    # move box obj randomly
+    # move box/pallet obj randomly in scene
     for obj in bpy.data.objects:
         print(obj.name)
         if "Box" in obj.name:
@@ -88,3 +88,10 @@ for n in range(10):
 ![image](media/(inst|rgb|depth).2.jpg)
 ![image](media/(inst|rgb|depth).3.jpg)
 
+## Run blender headless on a server with GPU
+
+- Render faster with a GPU
+- Blender can be run without GUI, supplying `--background` option
+```
+blender --background --python generate_synthetic_data.py
+``` 
