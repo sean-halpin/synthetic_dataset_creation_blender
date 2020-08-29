@@ -35,6 +35,13 @@ We can know everything about the scene, making it possible to
 
 ## Script the Randomise/Render workflow & run blender headless on a server with GPU
 
+The following example scripts will generate 10 sets of
+- Segmentation Map
+- RGB Image
+- Depth Map
+
+Each set with a new position for the objects in the scene with name `Box` & `Pallet`
+
 ```
 import cv2
 import bpy
@@ -74,7 +81,7 @@ for n in range(10):
 
 ## Build a synthetic data set
 
-- Images show (segmentation-map, rgb, depth-map) for visualization
+- Images show some generated(segmentation-map, rgb, depth-map) sets for visualization
 
 ![image](media/(inst|rgb|depth).0.jpg)
 ![image](media/(inst|rgb|depth).1.jpg)
