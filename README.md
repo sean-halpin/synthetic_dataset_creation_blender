@@ -20,15 +20,18 @@
 Use the blender python api `bpy`
 
 Create as many iterations & augmentations as required
+
 - Light Intensity, Position, Count
 - Camera Position, Focal Length, Orientation
 - Object Positions, Types, Distortions, Count
 
 ## Perfectly Annotated Rendered Scenes
 
-We can know everything about the scene, making it possible to - Generate an image of the scene
-- Image's corresponding segmentation-map
-- Image's corresponding  depth-map
+We can know everything about the scene, making it possible to
+
+- Generate an image of the scene
+- Generate the image's corresponding segmentation-map
+- Generate the image's corresponding depth-map
 
 ## Script the Randomise/Render workflow & run blender headless on a server with GPU
 
@@ -69,9 +72,9 @@ for n in range(10):
     )
 ```
 
-## Build a data set
+## Build a synthetic data set
 
-- Image show (segmentation-map, rgb, depth-map) for visualization
+- Images show (segmentation-map, rgb, depth-map) for visualization
 
 ![image](media/(inst|rgb|depth).0.jpg)
 ![image](media/(inst|rgb|depth).1.jpg)
