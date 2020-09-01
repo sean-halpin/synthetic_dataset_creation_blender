@@ -6,8 +6,7 @@
     + [Open Source Image Data Sets](#open-source-image-data-sets)
     + [Synthetic Data Sets](#synthetic-data-sets)
     + [A Combination](#a-combination)
-  * [Set the Scene](#set-the-scene)
-  * [Create Photorealistic scenes](#create-photorealistic-scenes)
+  * [Create Realistic scenes](#create-realistic-scenes)
   * [Randomise the scene with Python scripts](#randomise-the-scene-with-python-scripts)
     + [Complex Scenes](#complex-scenes)
   * [Perfectly Annotated Rendered Images](#perfectly-annotated-rendered-images)
@@ -68,16 +67,7 @@ Cons
 
 Combining Real & Synthetic Data may give even better results
 
-## Set the Scene
-
-- Create Objects
-- Shading
-- Lighting
-- Camera
-
-![media/scene](media/scene.png)
-
-## Create Photorealistic scenes
+## Create Realistic scenes
 
 - Add meshes for objects you need in your images
 - Create textures etc from photos, add them to mesh objects
