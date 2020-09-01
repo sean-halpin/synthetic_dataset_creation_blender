@@ -1,11 +1,11 @@
 # Synthetic Data creation with Blender
 
-- [Synthetic Data creation with Blender](#synthetic-data-creation-with-blender)
-  * [Intro](#intro)
+- [Intro](#intro)
     + [Why Blender](#why-blender)
     + [Open Source Image Data Sets](#open-source-image-data-sets)
     + [Synthetic Data Sets](#synthetic-data-sets)
     + [A Combination](#a-combination)
+- [How](#how)
   * [Create Realistic scenes](#create-realistic-scenes)
   * [Randomise the scene with Python scripts](#randomise-the-scene-with-python-scripts)
     + [Complex Scenes](#complex-scenes)
@@ -17,20 +17,20 @@
   * [(Demonstration) Build an annotated synthetic data set](#-demonstration--build-an-annotated-synthetic-data-set)
   * [Scaling - Run blender headless on a server with GPU](#scaling---run-blender-headless-on-a-server-with-gpu)
 
-## Intro
+# Intro
 Computer Vision A.I. requires many thousands of anottated images for training.
 3D rendered images can provide many variations with flawless automatic annotations.
 Blender is a great tool for creating computer vision training datasets.
 
 ### Why Blender
-Blender is free to use, provides the interfaces set setting up our environment
+Blender is free to use, cross-platform & provides the tools required setting up our environment & creating the dataset
 - Modelling
 - Shading
 - Rendering
 - Compositing
 - Custom Annotation
 - Python API
-- Scalable
+- Scaling
 
 ### Open Source Image Data Sets
 - Pros
@@ -58,14 +58,16 @@ Blender is free to use, provides the interfaces set setting up our environment
     - Infinite augmentations
     - Re-create rare cases with many augmentations
 
-Cons
- - May not be representative of real world
- - Effort required for photorealism
- - Requires GPU access for speed/scalability
+ - Cons
+    - May not be representative of real world
+    - Effort required for photorealism
+    - Requires GPU access for speed/scalability
 
 ### A Combination
 
 Combining Real & Synthetic Data may give even better results
+
+# How
 
 ## Create Realistic scenes
 
@@ -94,7 +96,6 @@ Collision detection required for more complex scenes
 - Avoid Floating Objects
 - Avoid Intersecting Objects
 
-![media/complexScenes.png](media/complexScenes.png)
 ![media/complexSceneRender.png](media/complexSceneRender.png)
 
 
